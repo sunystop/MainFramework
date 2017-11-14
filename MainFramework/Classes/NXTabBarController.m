@@ -18,7 +18,6 @@
 
 @end
 
-
 @implementation NXTabBarController
 
 + (instancetype)sharedInstance {
@@ -36,8 +35,14 @@
 
 - (void)addChildViewContoller:(UIViewController *)viewController title:(NSString *)title imageNormal:(NSString *)imageNormal imageSeleted:(NSString *)imageSeleted isRequiredNavigationController:(BOOL)isRequired {
     
+    UIImage *imageN = [UIImage imageNamed:imageNormal];
+    UIImage *imageS = [UIImage imageNamed:imageSeleted];
+    imageN = [imageN imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    imageS = [imageS imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
     viewController.tabBarItem.title = title;
-    viewController.tabBarItem = [[UITabBarItem alloc]initWithTitle:title image:[UIImage imageNamed:imageNormal] selectedImage:[UIImage imageNamed:imageSeleted]];
+    viewController.tabBarItem.image = imageN;
+    viewController.tabBarItem.selectedImage = imageS;
     
     if (isRequired) {
         NXNavigationController *nav = [[NXNavigationController alloc]initWithRootViewController:viewController];

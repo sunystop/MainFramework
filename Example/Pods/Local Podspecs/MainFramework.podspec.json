@@ -1,9 +1,9 @@
 {
   "name": "MainFramework",
-  "version": "0.1.0",
+  "version": "2",
   "summary": "A short description of MainFramework.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/kepuna/MainFramework",
+  "homepage": "https://github.com/NXTeamKit/MainFramework",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "kepuna": "yomingyo@gmail.com"
   },
   "source": {
-    "git": "https://github.com/kepuna/MainFramework.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/NXTeamKit/MainFramework.git",
+    "tag": "2"
   },
   "platforms": {
     "ios": "8.0"

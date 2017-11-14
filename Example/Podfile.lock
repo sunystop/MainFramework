@@ -1,5 +1,5 @@
 PODS:
-  - MainFramework (0.1.0)
+  - MainFramework (2)
 
 DEPENDENCIES:
   - MainFramework (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MainFramework: d90941029d1476516bd118a47e3eb1cf81edb94e
+  MainFramework: 4a4a3518ae8620cf65d4fa6e4c690736ee96cee6
 
 PODFILE CHECKSUM: f634e2625cbc80bb6b3bd6a2858c68700376ade8
 
