@@ -1,0 +1,22 @@
+{
+  "name": "MainFramework",
+  "version": "0.1.0",
+  "summary": "A short description of MainFramework.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kepuna/MainFramework",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kepuna": "yomingyo@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kepuna/MainFramework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MainFramework/Classes/**/*"
+}

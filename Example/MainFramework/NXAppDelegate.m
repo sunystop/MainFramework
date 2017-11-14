@@ -7,13 +7,31 @@
 //
 
 #import "NXAppDelegate.h"
+#import <MainFramework/MainFrameworkAPI.h>
+#import "NXViewController.h"
 
 @implementation NXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MainFrameworkAPI addChildViewContoller:[NXViewController new] title:@"首页" imageNormal:@"tab_home_n" imageSeleted:@"tab_home_h" isRequiredNavigationController:YES];
+    
+    [MainFrameworkAPI addChildViewContoller:[NXViewController new] title:@"审批" imageNormal:@"tab_approve_n" imageSeleted:@"tab_approve_h" isRequiredNavigationController:YES];
+    
+    [MainFrameworkAPI addChildViewContoller:[NXViewController new] title:@"我的" imageNormal:@"tab_my_n" imageSeleted:@"tab_my_h" isRequiredNavigationController:YES];
+ 
+    [MainFrameworkAPI setNavGlobalBackIcon:@"icon_back"];
+    self.window.rootViewController = [MainFrameworkAPI rootTabBarController];
     return YES;
+}
+
+- (UIWindow *)window {
+    if (_window == nil) {
+        _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        _window.backgroundColor = [UIColor whiteColor];
+        [_window makeKeyAndVisible];
+    }
+    return _window;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
